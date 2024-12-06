@@ -1,0 +1,8 @@
+*2nd order band pass filter using RLC resonator
+V1 1 0 AC 2
+R 1 2 1K
+L 2 0 100m
+C 2 0 25u
+.AC DEC 20 10 100MEG
+.probe
+.end
