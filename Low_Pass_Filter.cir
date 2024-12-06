@@ -1,7 +1,0 @@
-*Low Pass Filter
-R 1 2 5k 
-c 2 0 0.2u
-V 1 0 AC 1 
-.AC Dec 20 1 10Meg
-.probe 
-.end
