@@ -1,0 +1,13 @@
+*Sallen-key low pass filter 
+X1 3 4 5 6 4 UA741 
+Vin 1 0 AC 1 
+R2 2 1 10k
+R1 3 2 10k
+C1 3 0 0.01u
+C2 2 4 0.01u
+Vp 5 0 DC 10 
+Vn 6 0 DC -10 
+.lib nom.lib 
+.ac dec 20 10 100meg 
+.probe 
+.end 
