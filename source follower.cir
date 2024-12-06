@@ -1,0 +1,17 @@
+*Source follower 
+V1 1 0 SIN(0 1 1k)
+C1 2 1 1u 
+R1 3 2 18k 
+R2 2 0 51K
+M1 3 2 4 4 nmosfet
+RS 4 0 470
+C2 5 4 10u
+Rl 0 5 470 
+Vdd1 3 0 12 
+.model nmosfet NMOS (LEVEL=3 L=2e-06 W=0.5 KP=2e-05 RS=0.01 
++ RD=0.01 VTO=3 RDS=1000000 TOX=2e-06 CGSO=4e-11 CGDO=1e-11
++ CBD=1e-09 MJ=0.5 PB=0.8 FC=0.5 RG=5 IS=1e-14 N=1 RB=0.001 PHI=0.6
++ GAMMA=0 DELTA=0 ETA=0 THETA=0 KAPPA=0 VMAX=0  XJ=0  UO=600)
+.tran 1m 5m 0 1m
+.probe
+.end

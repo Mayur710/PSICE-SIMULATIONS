@@ -1,0 +1,14 @@
+*Ideal integrator using negative impedance 
+Vsig 1 0 pulse (1 -1 0 0 0 1m 2m)
+R1 2 1 1k
+C1 2 0 0.1u 
+R2 4 0 22k 
+R3 3 2 1k 
+R4 3 4 22k 
+X1 2 4 6 5 3 UA741
+Vn 5 0 DC -12 
+Vp 6 0 DC 12 
+.tran 0.01m 10m 0 0.01 
+.lib nom.lib
+.probe
+.end

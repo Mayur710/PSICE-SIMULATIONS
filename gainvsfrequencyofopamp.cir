@@ -1,0 +1,11 @@
+*gain vs frequency of opamp 
+X1 1 2 4 5 3 UA741
+R1 2 0 10k
+R2 2 3 10K
+Vin 1 0 AC 2
+Vp 4 0 DC 5
+Vn 5 0 DC -5
+.lib nom.lib
+.AC dec 20 1 100meg
+.probe
+.end

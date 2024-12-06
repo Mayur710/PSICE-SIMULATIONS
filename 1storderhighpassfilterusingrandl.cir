@@ -1,0 +1,7 @@
+*1st order high pass filter using R and L 
+V 1 0 AC 1
+R1 1 2 10 
+L 2 0 2m
+.AC DEC 20 1 10Meg
+.probe 
+.end
