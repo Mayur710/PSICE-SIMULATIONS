@@ -1,0 +1,7 @@
+*High Pass Filter 
+C 1 2 0.2u
+R 2 0 5k 
+V 1 0 AC 1
+.AC Dec 20 1 10Meg
+.probe 
+.end 
