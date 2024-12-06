@@ -1,0 +1,8 @@
+*2nd order band reject filter using RLC resonator 
+V1 1 0 AC 2
+L1 1 2 100m
+C1 1 2 25u
+R1 2 0 1k
+.AC DEC 20 10 100MEG
+.probe
+.end
